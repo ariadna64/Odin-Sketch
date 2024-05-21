@@ -1,13 +1,24 @@
 
-let container = document.createElement("container");
-document.body.appendChild(container);
+for (let i = 0; i < 16; i++) {
+            
+    let container = document.createElement("container");
+    document.body.appendChild(container);
 
-let div = document.createElement("div");
-container.appendChild(div);
+    for (let i = 0; i < 16; i++) {
 
-
-for (let i = 0; i = 15; i++) {
-    document.createElement("div");
-    container.appendChild("div");
+            let div = document.createElement("div");
+            container.appendChild(div);
+        }
 
 }
+    
+
+let div2 = document.querySelector("div");
+div2.addEventListener("mouseenter", () => {
+    div2.style.backgroundColor = "red";
+});
+
+
+div2.removeEventListener("mouseenter", () => {
+    div2.style.backgroundColor = "red";
+});
