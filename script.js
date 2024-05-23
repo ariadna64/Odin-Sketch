@@ -1,4 +1,6 @@
 
+// SQUARES CREATION
+
 for (let i = 0; i < 16; i++) {
             
     let container = document.createElement("container");
@@ -11,22 +13,16 @@ for (let i = 0; i < 16; i++) {
         }
 
 }
-    
+
+// DIV LIST AND HOVER
 
 let div2 = document.querySelectorAll("div");
 
-    for (let i = 0; i < div2.length; i++) {
-        evento(div2[i], i);
-    };
+for (const div of div2) {
     
-function evento(a,b) {
+    div.addEventListener("mouseenter", () => {
+        div.style.backgroundColor = "grey";
+        });
+    
+};
 
-    div2.addEventListener("mouseenter", () => {
-        div2.style.backgroundColor = "red";
-    });
-
-    div2.addEventListener("mouseleave", () => {
-        div2.style.backgroundColor = "";
-    });
-
-}
